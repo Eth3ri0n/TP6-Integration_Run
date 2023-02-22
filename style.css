@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+}
+
+.btn {
+  background: none;
+  padding: 10px;
+  margin: 20px 0;
+  border: 0.2px solid gray;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  min-width: 30%;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #000;
+  color: white;
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+p {
+  line-height: 25px;
+}
+/******************-Header-*****************/
+header.run-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  height: 100vh;
+}
+.run-text {
+  padding: 40px;
+}
+.run-text h1 {
+  font-weight: 500;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+
+.banner {
+  background-image: url(./img/banner.jpg);
+  height: 100%;
+  background-position: right;
+  background-size: cover;
+}
+
+/***************-Forest Run-**************/
+.forest-run {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+.forest-img-left-container {
+  background: url(./img/img-left.jpg) center/cover;
+}
+.forest-text-container {
+  padding: 40px;
+}
+
+/***************************-Bridge Run-****************************/
+.bridge-run {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-top: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.bridge-text-container {
+  padding: 40px;
+}
+.bridge-img-container {
+  background: url(./img/img-right.jpg) center/cover;
+}
+.contact {
+  text-align: center;
+  padding: 60px 0;
+}
+.form-grid {
+  width: 85%;
+  margin: 30px auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 224px;
+  grid-template-areas:
+    "name email"
+    "message message";
+}
+label {
+  font-weight: bolder;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid skyblue;
+}
+.message {
+  grid-area: message;
+}
+textarea {
+  resize: none;
+  height: 180px;
+}
+
+.medias{
+  padding: 40px;
+text-align: center;
+border-top: 1px solid #cccccc;
+position: relative;
+}
+
+@media screen and (max-width: 570px) {
+  header.run-container, .forest-run, .bridge-run {
+    display: block;
+  }
+  .banner {
+    max-height: 39.5%;
+  }
+}
