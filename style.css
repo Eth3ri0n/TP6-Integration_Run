@@ -100,6 +100,7 @@ header.run-container {
   grid-template-areas:
     "name email"
     "message message";
+    gap: 10px;
 }
 label {
   font-weight: bolder;
@@ -143,10 +144,14 @@ position: relative;
 }
 
 @media screen and (max-width: 570px) {
+  header.run-container {
+    height: auto;
+  }
   header.run-container, .forest-run, .bridge-run {
     display: block;
   }
   .banner {
-    max-height: 39.5%;
+    height: 50vh;
+    /* margin-bottom: 20px; */
   }
 }
