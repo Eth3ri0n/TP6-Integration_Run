@@ -6,7 +6,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   outline: none;
 }
-
+/************** -Button- **************/
 .btn {
   background: none;
   padding: 10px;
@@ -86,6 +86,7 @@ header.run-container {
 .bridge-img-container {
   background: url(./img/img-right.jpg) center/cover;
 }
+/*************** -Contact- *************/
 .contact {
   text-align: center;
   padding: 60px 0;
@@ -135,14 +136,54 @@ textarea {
   resize: none;
   height: 180px;
 }
-
-.medias {
-  padding: 40px;
-  text-align: center;
-  border-top: 1px solid #cccccc;
+/*************** -FOOTER- ***************/
+footer {
+  padding: 70px 0 90px;
   position: relative;
 }
-
+footer::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.082);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  top: 0;
+}
+.medias {
+  text-align: center;
+  /* border-top: 1px solid #cccccc; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin: 10px;
+}
+/**************** -RESPONSIVE- ************/
 @media screen and (max-width: 570px) {
   header.run-container {
     height: auto;
