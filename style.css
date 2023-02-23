@@ -100,7 +100,7 @@ header.run-container {
   grid-template-areas:
     "name email"
     "message message";
-    gap: 10px;
+  gap: 10px;
 }
 label {
   font-weight: bolder;
@@ -136,18 +136,20 @@ textarea {
   height: 180px;
 }
 
-.medias{
+.medias {
   padding: 40px;
-text-align: center;
-border-top: 1px solid #cccccc;
-position: relative;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  position: relative;
 }
 
 @media screen and (max-width: 570px) {
   header.run-container {
     height: auto;
   }
-  header.run-container, .forest-run, .bridge-run {
+  header.run-container,
+  .forest-run,
+  .bridge-run {
     display: block;
   }
   .banner {
